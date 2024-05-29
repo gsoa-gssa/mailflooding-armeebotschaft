@@ -13,10 +13,12 @@ class EmailStats extends BaseWidget
     {
         $sentEmails = Email::whereNot('sent_at', null)->count();
         $sentEmailsWithin30Minutes = Email::where('sent_at', '>', now()->subMinutes(30))->count();
+        $pendingEmails = Email::where('sent_at', null)->count();
         $contacts = Contact::count();
         $optinContacts = Contact::where('optin', true)->count();
         return [
             Stat::make('Sent Emails', $sentEmails),
+            Stat::make('Pending Emails', $pendingEmails),
             Stat::make('Sent Emails within 30 minutes', $sentEmailsWithin30Minutes),
             Stat::make('Contacts', $contacts),
             Stat::make('Opt-in Contacts', $optinContacts),
