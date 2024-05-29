@@ -2,10 +2,11 @@
 
 namespace App\Console\Commands;
 
-use App\Models\Email;
 use Carbon\Carbon;
-use Illuminate\Console\Command;
+use App\Models\Email;
 use SendGrid\Mail\Mail;
+use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Log;
 
 class SendPendingEmails extends Command
 {
@@ -28,7 +29,7 @@ class SendPendingEmails extends Command
      */
     public function handle()
     {
-        $emails = Email::whereNull('sent_at')->whereNot("body", null)->whereNot("subject", null)->limit(10)->get();
+        $emails = Email::whereNull('sent_at')->whereNot("body", null)->whereNot("subject", null)->limit(25)->get();
         $sdg = new \SendGrid(env('SDG_API_KEY'));
         $startDate = Carbon::parse("2024-05-30 08:00:00");
         foreach ($emails as $email) {
@@ -36,24 +37,26 @@ class SendPendingEmails extends Command
             app()->setLocale($contact->locale);
             $from = str_replace(" ", "", strtolower(iconv('UTF-8', 'ASCII//TRANSLIT', $contact->firstname . "." . $contact->lastname . __("@unsinnig.ch"))));
             $mail = new Mail();
-            $mail->setFrom($from, $contact->firstname . " " . $contact->lastname);
-            if (now() < $startDate) {
-                $to = "timothy@gsoa.ch";
-            } else {
-                $to = $email->politician->email;
-            }
-            $mail->addTo($to, $email->politician->name);
-            $mail->setSubject($email->subject);
-            $mail->addContent("text/html", $email->body);
             try {
+                $mail->setFrom($from, $contact->firstname . " " . $contact->lastname);
+                if (now() < $startDate) {
+                    $to = "timothy@gsoa.ch";
+                } else {
+                    $to = $email->politician->email;
+                }
+                $mail->addTo($to, $email->politician->name);
+                $mail->setSubject($email->subject);
+                $mail->addContent("text/html", $email->body);
                 $response = $sdg->send($mail);
-                echo $response->statusCode() . "\n";
+                Log::channel("email")->info("Email sent to " . $email->politician->name . " (" . $email->politician->email . "). Response with status code " . $response->statusCode());
                 if ($response->statusCode() == 202) {
                     $email->sent_at = now();
                     $email->save();
                 }
             } catch (\Exception $e) {
                 $response = $e->getMessage();
+                Log::channel("telegram")->error("Email could not be sent to " . $email->politician->name . " (" . $email->politician->email . "). Error: " . $response);
+                Log::channel("email")->error("Email could not be sent to " . $email->politician->name . " (" . $email->politician->email . "). Error: " . $response);
             }
         }
     }
