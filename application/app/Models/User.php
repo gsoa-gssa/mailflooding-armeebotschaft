@@ -49,6 +49,8 @@ class User extends Authenticatable implements MustVerifyEmail, FilamentUser
     /** Check user email domain against APP_DOMAIN_ALLOWLIST array */
     public function canAccessPanel(\Filament\Panel $panel): bool
     {
-        return in_array($this->email, explode(',', env('APP_DOMAIN_ALLOWLIST', '')));
+        $domains = (array) explode(',', env('APP_DOMAIN_ALLOWLIST', ''));
+        $emailDomain = explode('@', $this->email)[1];
+        return in_array($emailDomain, $domains);
     }
 }
