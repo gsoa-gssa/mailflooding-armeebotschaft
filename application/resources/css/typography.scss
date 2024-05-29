@@ -1,0 +1,26 @@
+html {
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+
+    @apply font-garamond;
+
+    p+p {
+        margin-top: 1.5em;
+    }
+
+    ul {
+        list-style-type: disc;
+        margin-left: 1.5em;
+
+        li+li {
+            margin-top: 0.5em;
+        }
+    }
+
+    ul+p {
+        margin-top: 1.5em;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+    }
+}

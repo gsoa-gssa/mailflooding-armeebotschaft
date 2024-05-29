@@ -1,0 +1,49 @@
+models:
+
+  Contact:
+    softDeletes
+    firstname: string
+    lastname: string
+    email: string
+    phone: string nullable
+    optin: boolean default:true
+
+  Email:
+    softDeletes
+    subject: string
+    body: text
+    sent_at: datetime nullable
+    contact_id: unsignedInteger
+    relationships:
+      belongsTo: Contact
+
+  Politician:
+    softDeletes
+    name: string
+    email: string
+    image: string nullable
+    canton_id: unsignedInteger
+    faction_id: unsignedInteger
+    council_id: unsignedInteger nullable
+    relationships:
+      belongsTo: Canton, Faction, Council
+
+  Canton:
+    softDeletes
+    name: string
+    relationships:
+      hasMany: Politician
+
+  Faction:
+    softDeletes
+    name: string
+    relationships:
+      hasMany: Politician
+
+  Council:
+    softDeletes
+    name: string
+    relationships:
+      hasMany: Politician
+
+

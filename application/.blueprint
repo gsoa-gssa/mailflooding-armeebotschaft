@@ -1,0 +1,27 @@
+created:
+    - database/factories/ContactFactory.php
+    - database/factories/EmailFactory.php
+    - database/factories/PoliticianFactory.php
+    - database/factories/CantonFactory.php
+    - database/factories/FactionFactory.php
+    - database/factories/CouncilFactory.php
+    - database/migrations/2024_05_24_172055_create_contacts_table.php
+    - database/migrations/2024_05_24_172056_create_emails_table.php
+    - database/migrations/2024_05_24_172057_create_politicians_table.php
+    - database/migrations/2024_05_24_172058_create_cantons_table.php
+    - database/migrations/2024_05_24_172059_create_factions_table.php
+    - database/migrations/2024_05_24_172100_create_councils_table.php
+    - app/Models/Contact.php
+    - app/Models/Email.php
+    - app/Models/Politician.php
+    - app/Models/Canton.php
+    - app/Models/Faction.php
+    - app/Models/Council.php
+models:
+    User: { name: string, email: string, email_verified_at: 'timestamp nullable default:NULL', password: string, remember_token: 'string:100 nullable default:NULL' }
+    Contact: { softdeletes: softDeletes, firstname: string, lastname: string, email: string, phone: 'string nullable', optin: 'boolean default:true' }
+    Email: { softdeletes: softDeletes, subject: string, body: text, sent_at: 'datetime nullable', contact_id: unsignedInteger, relationships: { belongsTo: Contact } }
+    Politician: { softdeletes: softDeletes, name: string, email: string, image: 'string nullable', canton_id: unsignedInteger, faction_id: unsignedInteger, council_id: 'unsignedInteger nullable', relationships: { belongsTo: 'Canton, Faction, Council' } }
+    Canton: { softdeletes: softDeletes, name: string, relationships: { hasMany: Politician } }
+    Faction: { softdeletes: softDeletes, name: string, relationships: { hasMany: Politician } }
+    Council: { softdeletes: softDeletes, name: string, relationships: { hasMany: Politician } }
