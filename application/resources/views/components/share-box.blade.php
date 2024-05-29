@@ -1,5 +1,6 @@
 <div class="flood-share mt-6 gap-2 p-4 md:p-6">
-    <h2 class="mb-4 font-bebas text-3xl">{{__("flood.share.title")}}</h2>
+    <h2 class="font-bebas text-3xl">{{__("flood.share.title")}}</h2>
+    <p class="mb-4">{{__("flood.share.description")}}</p>
     <div class="flood-share__grid grid md:grid-cols-2 gap-2">
         <input
             type="hidden"
