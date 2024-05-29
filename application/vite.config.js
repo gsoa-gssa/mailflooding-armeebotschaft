@@ -8,6 +8,11 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    resolve: {
+        alias: {
+            '@fonts': '/resources/fonts',
+        },
+    },
     server: {
         hmr: {
             host: "srflood.ddev.site",

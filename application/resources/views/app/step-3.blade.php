@@ -2,11 +2,11 @@
     <div class="flood-form__outer min-h-screen flex items-center">
         <div class="flood-form w-full max-w-[793px] mx-auto px-4 py-12">
             <a href="#" class="text-primary underline italic mb-2 block" onclick="window.history.back()">{{__("flood.form.back")}}</a>
-            <h1 class="mb-4 font-bebas text-5xl">{{__("flood.form.title3")}}</h1>
+            <h1 class="mb-4 font-machina font-bold text-5xl">{{__("flood.form.title3")}}</h1>
             <p>{{__("flood.form.explanation3")}}</p>
             <form action="/app/submission/3" method="POST" class="!mt-0">
-                <div class="flex justify-end gap-x-2 py-2 sticky top-0 z-50 bg-white bg-opacity-80">
-                    <button type="submit" class="flood-button !bg-green-600">{{__("flood.form.send")}}</button>
+                <div class="flex justify-end gap-x-2 py-2 sticky top-0 z-50 bg-black bg-opacity-80">
+                    <button type="submit" class="flood-button">{{__("flood.form.send")}}</button>
                 </div>
                 @if ($errors->any())
                     <div class="bg-red-200 border-2 border-solid border-red-600 rounded-sm px-4 py-2 text-red-600 mb-4">

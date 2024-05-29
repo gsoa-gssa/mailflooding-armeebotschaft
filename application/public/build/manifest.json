@@ -12,9 +12,109 @@
     "src": "node_modules/material-symbols/material-symbols-sharp.woff2"
   },
   "resources/css/app.scss": {
-    "file": "assets/app-DyQOYNa_.css",
+    "file": "assets/app-WpQrhjO5.css",
     "src": "resources/css/app.scss",
     "isEntry": true
+  },
+  "resources/fonts/PPNeueMachina-Inktrap.eot": {
+    "file": "assets/PPNeueMachina-Inktrap-D0LMbIIJ.eot",
+    "src": "resources/fonts/PPNeueMachina-Inktrap.eot"
+  },
+  "resources/fonts/PPNeueMachina-Inktrap.svg": {
+    "file": "assets/PPNeueMachina-Inktrap-Cu3cb7Qx.svg",
+    "src": "resources/fonts/PPNeueMachina-Inktrap1.svg"
+  },
+  "resources/fonts/PPNeueMachina-Inktrap.ttf": {
+    "file": "assets/PPNeueMachina-Inktrap-Bld7_l2o.ttf",
+    "src": "resources/fonts/PPNeueMachina-Inktrap.ttf"
+  },
+  "resources/fonts/PPNeueMachina-Inktrap.woff": {
+    "file": "assets/PPNeueMachina-Inktrap-CYzOkekD.woff",
+    "src": "resources/fonts/PPNeueMachina-Inktrap.woff"
+  },
+  "resources/fonts/PPNeueMachina-Inktrap.woff2": {
+    "file": "assets/PPNeueMachina-Inktrap-CkXXaRpM.woff2",
+    "src": "resources/fonts/PPNeueMachina-Inktrap.woff2"
+  },
+  "resources/fonts/PPNeueMachina-Inktrap1.eot": {
+    "file": "assets/PPNeueMachina-Inktrap1-C12CmB11.eot",
+    "src": "resources/fonts/PPNeueMachina-Inktrap1.eot"
+  },
+  "resources/fonts/PPNeueMachina-Inktrap1.svg": {
+    "file": "assets/PPNeueMachina-Inktrap-Cu3cb7Qx.svg",
+    "src": "resources/fonts/PPNeueMachina-Inktrap1.svg"
+  },
+  "resources/fonts/PPNeueMachina-Inktrap1.ttf": {
+    "file": "assets/PPNeueMachina-Inktrap1-BIyFIAvU.ttf",
+    "src": "resources/fonts/PPNeueMachina-Inktrap1.ttf"
+  },
+  "resources/fonts/PPNeueMachina-Inktrap1.woff": {
+    "file": "assets/PPNeueMachina-Inktrap1-Bneyl-fg.woff",
+    "src": "resources/fonts/PPNeueMachina-Inktrap1.woff"
+  },
+  "resources/fonts/PPNeueMachina-Inktrap1.woff2": {
+    "file": "assets/PPNeueMachina-Inktrap1-bVrW7fpC.woff2",
+    "src": "resources/fonts/PPNeueMachina-Inktrap1.woff2"
+  },
+  "resources/fonts/PPNeueMachina-InktrapUltBd.eot": {
+    "file": "assets/PPNeueMachina-InktrapUltBd-DuIRSAzr.eot",
+    "src": "resources/fonts/PPNeueMachina-InktrapUltBd.eot"
+  },
+  "resources/fonts/PPNeueMachina-InktrapUltBd.svg": {
+    "file": "assets/PPNeueMachina-InktrapUltBd-DdWEeghW.svg",
+    "src": "resources/fonts/PPNeueMachina-InktrapUltBd.svg"
+  },
+  "resources/fonts/PPNeueMachina-InktrapUltBd.ttf": {
+    "file": "assets/PPNeueMachina-InktrapUltBd-CAkEsREC.ttf",
+    "src": "resources/fonts/PPNeueMachina-InktrapUltBd.ttf"
+  },
+  "resources/fonts/PPNeueMachina-InktrapUltBd.woff": {
+    "file": "assets/PPNeueMachina-InktrapUltBd-CG-Rw_hY.woff",
+    "src": "resources/fonts/PPNeueMachina-InktrapUltBd.woff"
+  },
+  "resources/fonts/PPNeueMachina-InktrapUltBd.woff2": {
+    "file": "assets/PPNeueMachina-InktrapUltBd-DtR7RzZ1.woff2",
+    "src": "resources/fonts/PPNeueMachina-InktrapUltBd.woff2"
+  },
+  "resources/fonts/PPNeueMachina-InktrapUltBdIta.eot": {
+    "file": "assets/PPNeueMachina-InktrapUltBdIta-gb_BBrGA.eot",
+    "src": "resources/fonts/PPNeueMachina-InktrapUltBdIta.eot"
+  },
+  "resources/fonts/PPNeueMachina-InktrapUltBdIta.svg": {
+    "file": "assets/PPNeueMachina-InktrapUltBdIta-CXOIjLUK.svg",
+    "src": "resources/fonts/PPNeueMachina-InktrapUltBdIta.svg"
+  },
+  "resources/fonts/PPNeueMachina-InktrapUltBdIta.ttf": {
+    "file": "assets/PPNeueMachina-InktrapUltBdIta-DNWOEruH.ttf",
+    "src": "resources/fonts/PPNeueMachina-InktrapUltBdIta.ttf"
+  },
+  "resources/fonts/PPNeueMachina-InktrapUltBdIta.woff": {
+    "file": "assets/PPNeueMachina-InktrapUltBdIta-DI_cqcjH.woff",
+    "src": "resources/fonts/PPNeueMachina-InktrapUltBdIta.woff"
+  },
+  "resources/fonts/PPNeueMachina-InktrapUltBdIta.woff2": {
+    "file": "assets/PPNeueMachina-InktrapUltBdIta-fERivLbJ.woff2",
+    "src": "resources/fonts/PPNeueMachina-InktrapUltBdIta.woff2"
+  },
+  "resources/fonts/PPNeueMachina-ItalicInktrap.eot": {
+    "file": "assets/PPNeueMachina-ItalicInktrap-CJwARCM6.eot",
+    "src": "resources/fonts/PPNeueMachina-ItalicInktrap.eot"
+  },
+  "resources/fonts/PPNeueMachina-ItalicInktrap.svg": {
+    "file": "assets/PPNeueMachina-ItalicInktrap-BQ8sChgQ.svg",
+    "src": "resources/fonts/PPNeueMachina-ItalicInktrap.svg"
+  },
+  "resources/fonts/PPNeueMachina-ItalicInktrap.ttf": {
+    "file": "assets/PPNeueMachina-ItalicInktrap-Djk5vFIX.ttf",
+    "src": "resources/fonts/PPNeueMachina-ItalicInktrap.ttf"
+  },
+  "resources/fonts/PPNeueMachina-ItalicInktrap.woff": {
+    "file": "assets/PPNeueMachina-ItalicInktrap-BUv3Qzzz.woff",
+    "src": "resources/fonts/PPNeueMachina-ItalicInktrap.woff"
+  },
+  "resources/fonts/PPNeueMachina-ItalicInktrap.woff2": {
+    "file": "assets/PPNeueMachina-ItalicInktrap-BfOctarJ.woff2",
+    "src": "resources/fonts/PPNeueMachina-ItalicInktrap.woff2"
   },
   "resources/js/app.js": {
     "file": "assets/app-CLzqvtrp.js",

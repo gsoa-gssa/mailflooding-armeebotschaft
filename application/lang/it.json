@@ -1,5 +1,4 @@
 {
-    "@unsinnig.ch": "@assurdo.ch",
     "flood.form.faction.m-e": "Mitte-EVP",
     "flood.form.faction.rl": "FDP",
     "flood.form.faction.s": "SP",
@@ -69,7 +68,7 @@
     "flood.form.subject": "Oggetto",
     "flood.form.subject.default": "Nessuna ulteriore spesa di armamento nel messaggio dell'esercito 2024!",
     "flood.form.body": "Messaggio",
-    "flood.form.helpers.body": "Puoi personalizzare o integrare il messaggio. [SALUTO] verrà automaticamente sostituito con il titolo del membro del Consiglio degli Stati.",
+    "flood.form.helpers.body": "Puoi personalizzare o integrare il messaggio. Il saluto verrà automaticamente sostituito con il titolo del membro del Consiglio degli Stati.",
     "flood.form.title4": "Fatto!",
     "flood.form.explanation4": "Il tuo messaggio è stato inviato con successo. Grazie per il tuo impegno contro l'assurdo aumento dell'armamento dell'esercito!",
     "flood.form.newEmail": "Scrivi una nuova e-mail",

@@ -1,4 +1,4 @@
-<div class="flood-politicians__card">
+<div class="flood-politicians__card cursor-pointer">
     <input type="checkbox" name="politicians[]" id="politician_{{ $politician->id }}" value="{{ $politician->id }}" @if ($checked) checked @endif>
     <label for="politician_{{ $politician->id }}">
         <img src="/storage/{{ $politician->image }}" alt="{{ $politician->name }}">

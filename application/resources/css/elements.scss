@@ -1,7 +1,7 @@
 /** Buttons **/
 .flood-button {
     padding: 0.4em 0.65em;
-    @apply bg-primary text-white font-bebas inline-flex justify-center cursor-pointer;
+    @apply bg-primary text-white font-machina font-bold text-black inline-flex justify-center cursor-pointer;
 }
 
 /** Forms **/
@@ -24,7 +24,7 @@
             z-index: 1;
             top: 0.75em;
             left: 0.25em;
-            background-color: white;
+            background-color: black;
             padding: 0 0.25em;
             transition: all 0.2s;
         }
@@ -37,7 +37,7 @@
             top: -0.5em;
             left: 0.25em;
             font-size: 0.75em;
-            background-color: white;
+            background-color: black;
         }
 
         input,
@@ -45,13 +45,23 @@
         select {
             padding: 0.5em;
             border: 1px solid theme("colors.primary");
+            background-color: black;
             border-radius: 4px;
         }
 
         .choices__inner {
-            background-color: white;
+            background-color: black;
             border: 1px solid theme("colors.primary");
             border-radius: 4px;
+        }
+
+        .choices__list {
+            background-color: black;
+
+            .choices__item.is-highlighted {
+                background-color: theme("colors.primary");
+                color: black;
+            }
         }
     }
 }
@@ -82,17 +92,18 @@
             left: 0;
             padding: 0.125rem;
             display: none;
-            @apply bg-green-600 text-white;
+            @apply bg-primary text-white;
 
             span {
                 line-height: 1;
+                color: black;
             }
         }
 
         &:has(input[type="checkbox"]:checked) {
             img {
                 filter: none;
-                @apply border-green-600
+                @apply border-primary
             }
 
             .flood-politicians__card__checked {

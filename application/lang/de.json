@@ -68,7 +68,7 @@
     "flood.form.subject": "Betreff",
     "flood.form.subject.default": "Keine weiteren Aufrüstungsausgaben in der Armeebotschaft 2024!",
     "flood.form.body": "Nachricht",
-    "flood.form.helpers.body": "Du kannst die Nachricht noch anpassen oder ergänzen. [ANREDE] wird automatisch durch die Anrede des Ständeratsmitglieds ersetzt.",
+    "flood.form.helpers.body": "Du kannst die Nachricht noch anpassen oder ergänzen. Die Anrede wird automatisch gesetzt.",
     "flood.form.title4": "Fertig!",
     "flood.form.explanation4": "Deine Nachricht wurde erfolgreich versendet. Danke, dass du dich gegen die unsinnige Aufrüstung der Armee einsetzt!",
     "flood.form.newEmail": "Neue E-Mail schreiben",

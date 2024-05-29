@@ -2,7 +2,7 @@
     <x-header />
 
     <div class="info-content w-full max-w-[793px] mx-auto px-4 py-12">
-        <h3 class="font-bebas text-3xl">{{__("flood.info.title")}}</h3>
+        <h3 class="font-machina font-bold text-3xl">{{__("flood.info.title")}}</h3>
         <div class="info-content__container pb-8">
             <x-dynamic-component :component="'info.' . app()->getLocale()"/>
         </div>

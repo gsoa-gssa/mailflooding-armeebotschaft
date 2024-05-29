@@ -1,5 +1,4 @@
 {
-    "@unsinnig.ch": "@non-sens.ch",
     "flood.form.faction.m-e": "Mitte-EVP",
     "flood.form.faction.rl": "FDP",
     "flood.form.faction.s": "SP",
@@ -69,7 +68,7 @@
     "flood.form.subject": "Sujet",
     "flood.form.subject.default": "Pas de dépenses supplémentaires d'armement dans l'armée 2024 !",
     "flood.form.body": "Message",
-    "flood.form.helpers.body": "Vous pouvez personnaliser ou compléter le message. [SALUTATION] sera automatiquement remplacé par la salutation du membre du Conseil des États.",
+    "flood.form.helpers.body": "Vous pouvez personnaliser ou compléter le message. La salutation sera automatiquement ajouté.",
     "flood.form.title4": "Terminé !",
     "flood.form.explanation4": "Votre message a été envoyé avec succès. Merci de vous opposer à l'augmentation absurde de l'armée !",
     "flood.form.newEmail": "Écrire un nouvel e-mail",

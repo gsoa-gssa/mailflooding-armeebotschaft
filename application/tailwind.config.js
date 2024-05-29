@@ -8,11 +8,10 @@ export default {
     theme: {
         extend: {
             colors: {
-                "primary": "#52001D",
+                "primary": "#28EB64",
             },
             "fontFamily": {
-                "garamond": ["EB Garamond", "serif"],
-                "bebas": ["Bebas Neue", "display"],
+                "machina": ["PPMachina", "sans-serif"],
             },
         },
         plugins: [],

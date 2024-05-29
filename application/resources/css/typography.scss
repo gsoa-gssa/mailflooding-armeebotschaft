@@ -1,7 +1,9 @@
+@import "./fonts.scss";
+
 html {
     font-size: clamp(1rem, 1.2vw, 1.5rem);
 
-    @apply font-garamond;
+    @apply font-machina text-white;
 
     p+p {
         margin-top: 1.5em;

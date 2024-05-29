@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{__("flood.og.title")}}</title>
+    <meta name="title" content="{{__("flood.og.title")}}" />
+    <meta name="description" content="{{__("flood.og.description")}}" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{app()->make('url')->to('/')}}" />
+    <meta property="og:title" content="{{__("flood.og.title")}}" />
+    <meta property="og:description" content="{{__("flood.og.description")}}" />
+    <meta property="og:image" content="{{app()->make('url')->to('/')}}/images/og/og_{{app()->getLocale()}}.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="{{app()->make('url')->to('/')}}" />
+    <meta property="twitter:title" content="{{__("flood.og.title")}}" />
+    <meta property="twitter:description" content="{{__("flood.og.description")}}" />
+    <meta property="twitter:image" content="{{app()->make('url')->to('/')}}/images/og/og_{{app()->getLocale()}}.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=bebas-neue:400|eb-garamond:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet" />
     @vite(["resources/css/app.scss"])

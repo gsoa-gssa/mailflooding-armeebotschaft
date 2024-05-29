@@ -56,7 +56,7 @@ class AppController extends Controller
                     } else {
                         $salutation = __("flood.email.salutation.neutral") . " " . $email->politician->name;
                     }
-                    $email->body = str_replace(["[ANREDE]", "[SALUTO]", "[SALUTATION]"], $salutation, $validated["body"]);
+                    $email->body = str_replace(["[ANREDE WIRD AUTOMATISCH GENERIERT]", "[IL SALUTO VIENE GENERATO AUTOMATICAMENTE]", "[LA FORMULE DE POLITESSE EST GÉNÉRÉE AUTOMATIQUEMENT]"], $salutation, $validated["body"]);
                     $email->save();
                 }
                 return redirect("/app/final/$validated[contact_uuid]");

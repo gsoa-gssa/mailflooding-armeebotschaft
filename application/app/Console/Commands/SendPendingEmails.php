@@ -35,7 +35,7 @@ class SendPendingEmails extends Command
         foreach ($emails as $email) {
             $contact = $email->contact;
             app()->setLocale($contact->locale);
-            $from = str_replace(" ", "", strtolower(iconv('UTF-8', 'ASCII//TRANSLIT', $contact->firstname . "." . $contact->lastname . __("@unsinnig.ch"))));
+            $from = str_replace(" ", "", strtolower(iconv('UTF-8', 'ASCII//TRANSLIT', $contact->firstname . "." . $contact->lastname . "@unsinnig.ch")));
             $mail = new Mail();
             try {
                 $mail->setFrom($from, $contact->firstname . " " . $contact->lastname);
