@@ -4,10 +4,13 @@ use App\Models\Contact;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AppController;
 use App\Models\Canton;
+use App\Models\Email;
 use App\Models\Politician;
 
 Route::get('/', function () {
-    return view("landing.index");
+    $sentEmailsCount = Email::whereNot("sent_at", null)->count();
+    $sentEmailsCount += 78 - round(($sentEmailsCount / 3));
+    return view("landing.index", compact("sentEmailsCount"));
 });
 
 Route::get("{darumgehts}", function($slug) {

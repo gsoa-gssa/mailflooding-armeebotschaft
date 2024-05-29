@@ -34,6 +34,7 @@
     "flood.email.salutation.male": "Cher Monsieur le conseiller aux États",
     "flood.email.salutation.female": "Chère Madame la conseillère aux États",
     "flood.email.salutation.neutral": "Cher membre du Conseil des États",
+    "flood.intro.counter": "Déjà :counter e-mails envoyés",
     "flood.intro.button": "Je participe !",
     "flood.share.title": "Aidez-nous !",
     "flood.share.description": "Pour que les conseillers aux États sachent ce que nous pensons de leurs propositions, nous partageons l'action sur différents canaux. Aidez-nous et partagez l'action avec vos amis !",
