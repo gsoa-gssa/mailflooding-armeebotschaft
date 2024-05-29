@@ -53,6 +53,7 @@
                     <input type="checkbox" name="optin" id="optin" checked>
                     <label for="optin"><span>{!! __("flood.form.optin") !!}</span></label>
                 </div>
+                <input type="hidden" name="locale" value="{{ app()->getLocale() }}">
                 <div class="flood-form__group" data-step="final">
                     <button type="submit" class="flood-button text-2xl">{{__("flood.form.next")}}</button>
                 </div>

@@ -18,6 +18,7 @@ class AppController extends Controller
                     "phone" => "nullable",
                     "canton_id" => "required",
                     "optin" => "",
+                    "locale" => "required|in:de,fr,it",
                 ]);
                 $validated["optin"] = (bool) $validated["optin"];
                 $validated["uuid"] = (string) \Illuminate\Support\Str::uuid();

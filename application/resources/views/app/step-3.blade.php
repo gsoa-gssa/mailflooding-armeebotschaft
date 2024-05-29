@@ -61,5 +61,11 @@
         .ql-container, .ql-editor {
             height: fit-content;
         }
+
+        .ql-editor p+p,
+        .ql-editor ul+p,
+        .ql-editor ol+p{
+            margin-top: 1em;
+        }
     </style>
 </x-app-container>
