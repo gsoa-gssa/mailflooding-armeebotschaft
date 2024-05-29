@@ -46,6 +46,7 @@ class SendPendingEmails extends Command
                 }
                 $mail->addTo($to, $email->politician->name);
                 $mail->setSubject($email->subject);
+                $mail->setReplyTo(env('REPLY_TO_EMAIL'));
                 $mail->addContent("text/html", $email->body);
                 $response = $sdg->send($mail);
                 Log::channel("email")->info("Email sent to " . $email->politician->name . " (" . $email->politician->email . "). Response with status code " . $response->statusCode());

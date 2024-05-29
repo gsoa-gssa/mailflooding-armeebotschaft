@@ -16,6 +16,7 @@ return Application::configure(basePath: dirname(__DIR__))
     })
     ->withSchedule(function (Schedule $schedule) {
         $schedule->command('emails:send')->everyMinute();
+        // $schedule->command('app:stats')->everyTenMinutes();
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
