@@ -62,8 +62,8 @@ class SendPendingEmails extends Command
                 }
             } catch (\Exception $e) {
                 $response = $e->getMessage();
-                Log::channel("telegram")->error("Email could not be sent to " . $email->politician->name . " (" . $email->politician->email . "), E-Mail ID: " . $email->id . ". Error: " . $response);
-                Log::channel("email")->error("Email could not be sent to " . $email->politician->name . " (" . $email->politician->email . "). E-Mail ID: " . $email->id . ". Error: " . $response);
+                Log::channel("telegram")->error("Email could not be sent to " . $email->politician->name . " (" . $email->politician->email . "), E-Mail ID: " . $email->id . ". From E-Mail: " . $from . ". Error: " . $response);
+                Log::channel("email")->error("Email could not be sent to " . $email->politician->name . " (" . $email->politician->email . "). E-Mail ID: " . $email->id . ". From E-Mail: " . $from . ". Error: " . $response);
             }
         }
     }
