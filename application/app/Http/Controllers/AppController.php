@@ -20,6 +20,9 @@ class AppController extends Controller
                     "optin" => "",
                     "locale" => "required|in:de,fr,it",
                 ]);
+                if (!isset($validated["optin"])) {
+                    $validated["optin"] = false;
+                }
                 $validated["optin"] = (bool) $validated["optin"];
                 $validated["uuid"] = (string) \Illuminate\Support\Str::uuid();
                 $contact = Contact::create($validated);
