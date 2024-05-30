@@ -37,8 +37,8 @@ class SendPendingEmails extends Command
             app()->setLocale($contact->locale);
             // Replace umlauts and special characters with ASCII characters
             $from = strtolower(str_replace(
-                ["ä", "ö", "ü", "ß", " ", "ç", "é", "è", "à"],
-                ["ae", "oe", "ue", "ss", "", "c", "e", "e", "a"],
+                ["ä", "ö", "ü", "ß", " ", "ç", "é", "è", "à", "-"],
+                ["ae", "oe", "ue", "ss", "", "c", "e", "e", "a", ""],
                 iconv('UTF-8', 'ASCII//TRANSLIT', $contact->firstname . "." . $contact->lastname . "@unsinnig.ch")
             ));
             $mail = new Mail();
