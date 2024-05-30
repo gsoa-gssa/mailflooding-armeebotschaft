@@ -9,7 +9,6 @@ use App\Models\Politician;
 
 Route::get('/', function () {
     $sentEmailsCount = Email::whereNot("sent_at", null)->count();
-    $sentEmailsCount += 78 - round(($sentEmailsCount / 3));
     return view("landing.index", compact("sentEmailsCount"));
 });
 
