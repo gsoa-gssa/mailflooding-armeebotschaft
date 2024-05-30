@@ -45,7 +45,6 @@ class EmailResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('id')
-                    ->primary()
                     ->sortable()
                     ->searchable(),
                 Tables\Columns\TextColumn::make('subject')
