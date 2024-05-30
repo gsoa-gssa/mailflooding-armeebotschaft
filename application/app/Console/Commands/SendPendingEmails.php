@@ -39,8 +39,8 @@ class SendPendingEmails extends Command
             $from = strtolower(str_replace(
                 ["ä", "ö", "ü", "ß", " ", "ç", "é", "è", "à", "-", "."],
                 ["ae", "oe", "ue", "ss", "", "c", "e", "e", "a", "", ""],
-                $contact->firstname . "." . $contact->lastname . "@unsinnig.ch"
-                )
+                $contact->firstname . "." . $contact->lastname
+                ) . "@unsinnig.ch"
             );
             $mail = new Mail();
             try {
