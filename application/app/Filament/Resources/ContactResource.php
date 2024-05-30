@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+use App\Filament\Exports\ContactExporter;
 use Filament\Forms;
 use Filament\Tables;
 use App\Models\Contact;
@@ -82,6 +83,10 @@ class ContactResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+            ])
+            ->headerActions([
+                Tables\Actions\ExportAction::make()
+                    ->exporter(ContactExporter::class),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
