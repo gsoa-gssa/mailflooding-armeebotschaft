@@ -8,7 +8,7 @@ use App\Models\Email;
 use App\Models\Politician;
 
 Route::get('/', function () {
-    $sentEmailsCount = Email::whereNot("sent_at", null)->count();
+    $sentEmailsCount = Email::whereNot("body", null)->count();
     return view("landing.index", compact("sentEmailsCount"));
 });
 
