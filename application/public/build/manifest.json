@@ -12,7 +12,7 @@
     "src": "node_modules/material-symbols/material-symbols-sharp.woff2"
   },
   "resources/css/app.scss": {
-    "file": "assets/app-Nynud4cg.css",
+    "file": "assets/app-CLD3-bHc.css",
     "src": "resources/css/app.scss",
     "isEntry": true
   },
@@ -22,7 +22,7 @@
   },
   "resources/fonts/PPNeueMachina-Inktrap.svg": {
     "file": "assets/PPNeueMachina-Inktrap-Cu3cb7Qx.svg",
-    "src": "resources/fonts/PPNeueMachina-Inktrap1.svg"
+    "src": "resources/fonts/PPNeueMachina-Inktrap.svg"
   },
   "resources/fonts/PPNeueMachina-Inktrap.ttf": {
     "file": "assets/PPNeueMachina-Inktrap-Bld7_l2o.ttf",
@@ -42,7 +42,7 @@
   },
   "resources/fonts/PPNeueMachina-Inktrap1.svg": {
     "file": "assets/PPNeueMachina-Inktrap-Cu3cb7Qx.svg",
-    "src": "resources/fonts/PPNeueMachina-Inktrap1.svg"
+    "src": "resources/fonts/PPNeueMachina-Inktrap.svg"
   },
   "resources/fonts/PPNeueMachina-Inktrap1.ttf": {
     "file": "assets/PPNeueMachina-Inktrap1-BIyFIAvU.ttf",

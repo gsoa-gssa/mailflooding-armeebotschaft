@@ -34,6 +34,7 @@
     "flood.email.salutation.male": "Geschätzter Herr Ständerat",
     "flood.email.salutation.female": "Geschätzte Frau Ständerätin",
     "flood.email.salutation.neutral": "Sehr geehrtes Mitglied des Ständerats",
+    "flood.intro.final" : "Die Kampagne ist beendet. Danke vielmals für deine Unterstützung!",
     "flood.intro.counter": "Schon :counter E-mails verschickt!",
     "flood.intro.button": "Ich bin dabei!",
     "flood.share.title": "Hilft mit!",

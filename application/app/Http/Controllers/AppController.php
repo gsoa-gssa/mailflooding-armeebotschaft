@@ -9,6 +9,7 @@ class AppController extends Controller
 {
     public static function submission(Request $request, $step)
     {
+        return redirect("/");
         switch ($step) {
             case "1":
                 $validated = $request->validate([

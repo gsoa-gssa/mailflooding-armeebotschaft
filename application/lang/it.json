@@ -34,6 +34,7 @@
     "flood.email.salutation.male": "Gentile Signor Consigliere degli Stati",
     "flood.email.salutation.female": "Gentile Signora Consigliera degli Stati",
     "flood.email.salutation.neutral": "Egregio Membro del Consiglio degli Stati",
+    "flood.intro.final": "La campagna è terminata. Grazie mille per il tuo sostegno!",
     "flood.intro.counter": "Già inviate :counter email!",
     "flood.intro.button": "Partecipo!",
     "flood.share.title": "Aiutaci!",

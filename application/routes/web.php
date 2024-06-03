@@ -17,7 +17,13 @@ Route::get("{darumgehts}", function($slug) {
 })->whereIn("darumgehts", ["darum-gehts", "de-quoi-sagit-il", "informazioni"]);
 
 Route::prefix("app")->group(function() {
+
+    Route::get("/{star}", function($star) {
+        return redirect("/");
+    });
+
     Route::get("/", function() {
+        return redirect("/");
         return view("app.index");
     });
 

@@ -34,6 +34,7 @@
     "flood.email.salutation.male": "Cher Monsieur le conseiller aux États",
     "flood.email.salutation.female": "Chère Madame la conseillère aux États",
     "flood.email.salutation.neutral": "Cher membre du Conseil des États",
+    "flood.intro.final": "La campagne est terminée. Merci beaucoup pour votre soutien !",
     "flood.intro.counter": "Déjà :counter e-mails envoyés",
     "flood.intro.button": "Je participe !",
     "flood.share.title": "Aidez-nous !",
