@@ -4,12 +4,12 @@
     <div class="flood-intro">
         <div class="flood-intro__inner w-full max-w-[793px] mx-auto px-4 py-12">
             <div class="text-lg pb-8">
-                @if ($sentEmailsCount >= 50)
-                    <p class="font-bold text-primary">{{__("flood.intro.counter", ["counter" => $sentEmailsCount])}}</p>
-                @endif
                 <div class="p-4 border-primary border-2 rounded-sm bg-primary bg-opacity-60 mb-6">
                     <p class="text-white font-bold">{{__("flood.intro.final")}}</p>
                 </div>
+                @if ($sentEmailsCount >= 50)
+                    <p class="font-bold text-primary">{{__("flood.intro.counter", ["counter" => $sentEmailsCount])}}</p>
+                @endif
                 <x-dynamic-component :component="'intro.' . app()->getLocale()"/>
             </div>
             <a href="#" class="flood-button text-3xl w-full sticky bottom-4 items-center gap-2 relative disabled grayscale blur-sm hover:blur-none transition-all" onclick="alert('{{__('flood.intro.final')}}')">
