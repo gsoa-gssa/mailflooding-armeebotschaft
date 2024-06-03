@@ -21,6 +21,7 @@ class EmailExporter extends Exporter
             ExportColumn::make('subject'),
             ExportColumn::make('body'),
             ExportColumn::make('politician.name'),
+            ExportColumn::make('politician.faction.name'),
             ExportColumn::make('sent_at'),
             ExportColumn::make('contact.id'),
             ExportColumn::make('created_at'),
