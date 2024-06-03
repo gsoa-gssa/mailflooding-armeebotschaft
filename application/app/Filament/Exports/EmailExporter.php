@@ -22,7 +22,7 @@ class EmailExporter extends Exporter
             ExportColumn::make('body'),
             ExportColumn::make('politician.name'),
             ExportColumn::make('sent_at'),
-            ExportColumn::make('contact.name'),
+            ExportColumn::make('contact.id'),
             ExportColumn::make('created_at'),
             ExportColumn::make('updated_at'),
             ExportColumn::make('deleted_at'),
